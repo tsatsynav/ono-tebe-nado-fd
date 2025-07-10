@@ -1,1 +1,48 @@
-/* место для вашего кода */
+/* <<< --- HEADER --- >>> */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 13px;
+  list-style: circle;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  justify-self: end;
+}
+
+.header__address {
+  align-items: flex-start;
+}
+
+/* <<< --- MAIN --- >>> */
+/* <<< --- COVER --- >>> */
+.cover {
+  min-height: 757px;
+  position: relative;
+  background-color: #9c44c1;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.6;
+}

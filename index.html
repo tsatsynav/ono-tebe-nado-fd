@@ -11,43 +11,46 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="" class="menu__link menu__link-action">главная</a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a href="" class="header__link header__link_active">главная</a>
           </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">посмотреть лоты</a>
+          <li class="header__links-list-item">
+            <a href="" class="header__link">посмотреть лоты</a>
           </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">об&nbsp;аукционе</a>
+          <li class="header__links-list-item">
+            <a href="" class="header__link">об&nbsp;аукционе</a>
           </li>
         </ul>
       </nav>
-      <a href="" class="header__link">
+      <a href="" class="header__logo">
         <img
           src="images/logo-black.svg"
           alt="Логотип сайта Оно тебе надо"
-          class="header__logo"
+          class="header__logo-image"
         />
       </a>
-      <address class="address address-header">
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="cover">
-          <h1 class="main-title">Оно тебе надо</h1>
-          <div class="description">
-            <p class="description__text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="button" type="button">Сделать ставку</button>
-          </div>
+      <section class="cover">
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_start">Оно</span>
+          <span class="aligned-text aligned-text_middle">тебе</span>
+          <span class="aligned-text aligned-text_end">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button" type="button">Сделать ставку</button>
         </div>
+        <div class="overlay"></div>
       </section>
       <section class="lots">
         <h2 class="section-title">Лоты</h2>
