@@ -53,11 +53,11 @@
         <div class="overlay"></div>
       </section>
       <section class="lots">
-        <h2 class="section-title">Лоты</h2>
+        <h2 class="lots__title section-title">Лоты</h2>
         <ul class="lots__list">
           <li class="lots__item">
             <a href="" class="lots__link">
-              <article class="card">
+              <article class="card card_start">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -66,12 +66,13 @@
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
           <li class="lots__item">
             <a href="" class="lots__link">
-              <article class="card">
+              <article class="card card_middle">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -83,12 +84,13 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
           <li class="lots__item">
             <a href="" class="lots__link">
-              <article class="card">
+              <article class="card card_end">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -98,6 +100,7 @@
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
@@ -106,16 +109,18 @@
       </section>
       <section class="about">
         <div class="about-start">
-          <a href="" class="about-start__link">
-            <img
-              src="images/logo-white.svg"
-              alt="Логотип сайта Оно тебе надо"
-              class="about-start__logo"
-            />
-          </a>
+          <div class="about-start__logo_box">
+            <a href="" class="about-start__link">
+              <img
+                src="images/logo-white.svg"
+                alt="Логотип сайта Оно тебе надо"
+                class="about-start__logo"
+              />
+            </a>
+          </div>
         </div>
         <div class="about-end">
-          <h2 class="section-title">Об аукционе</h2>
+          <h2 class="about__title section-title">Об аукционе</h2>
           <div class="about-end__description">
             <p class="about-end__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -157,9 +162,21 @@
         </ul>
       </nav>
       <ul class="social__list">
-        <li class="social__item"><a href="" class="social__link"></a></li>
-        <li class="social__item"><a href="" class="social__link"></a></li>
-        <li class="social__item"><a href="" class="social__link"></a></li>
+        <li class="social__item">
+          <a href="" class="social__link"
+            ><img class="social__logo" src="images/yt.svg" alt=""
+          /></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"
+            ><img class="social__logo" src="images/vk.svg" alt=""
+          /></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"
+            ><img class="social__logo" src="images/pinterest.svg" alt=""
+          /></a>
+        </li>
       </ul>
     </footer>
   </body>
