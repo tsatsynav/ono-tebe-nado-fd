@@ -24,6 +24,18 @@
   text-transform: uppercase;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.menu-link-active {
+  text-decoration: none;
+}
+
 /* <<< --- HEADER STYLES --- >>> */
 .header {
   display: grid;
@@ -52,12 +64,9 @@
   list-style: none;
 }
 
-.header__link_active {
-  text-decoration: none;
-}
-
 .header__address {
   justify-self: end;
+  padding-right: 5px;
 }
 
 /* <<< --- MAIN STYLES --- >>> */
@@ -67,8 +76,8 @@
   flex-grow: 1;
 }
 
-/* <<< --- COVER STYLES --- >>> */
-.cover {
+/* <<< --- HERO STYLES --- >>> */
+.hero {
   min-height: 757px;
   position: relative;
   display: flex;
@@ -86,7 +95,7 @@
   color: #fff;
 }
 
-.cover__title {
+.hero__title {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -97,25 +106,25 @@
   letter-spacing: 0.3em;
 }
 
-.aligned-text {
+.hero__title_aligned {
   display: block;
 }
 
-.aligned-text_start {
+.hero__title_aligned-start {
   text-align: start;
 }
 
-.aligned-text_middle {
-  padding-left: 30px;
+.hero__title_aligned-middle {
+  padding-left: 32px;
   text-align: center;
 }
 
-.aligned-text_end {
+.hero__title_aligned-end {
   margin-right: -30px;
   text-align: end;
 }
 
-.cover__description {
+.hero__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,7 +134,7 @@
   line-height: 127%;
 }
 
-.cover__description-text {
+.hero__text {
   word-spacing: 18px;
 }
 
@@ -136,14 +145,6 @@
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: #000;
-  opacity: 0.6;
-  z-index: 0;
 }
 
 /* <<< --- LOTS STYLES --- >>> */
@@ -185,33 +186,23 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  color: #fff;
   z-index: -1;
-}
-
-.card__title {
-  text-underline-offset: 3px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .card_start {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_middle {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_end {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card__title {
@@ -220,6 +211,7 @@
   line-height: 120%;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 2px;
   z-index: 1;
 }
 
@@ -249,13 +241,13 @@
   line-height: 120%;
 }
 
-.about-start {
+.about__start {
   display: flex;
   justify-content: center;
   padding-top: 35px;
 }
 
-.about-start__logo_box {
+.about__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,13 +261,13 @@
   padding: 148px 0 111px;
 }
 
-.about-end__description {
+.about__description {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.about-end__text {
+.about__text {
   padding-right: 5px;
 }
 
@@ -285,7 +277,6 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 0 50px 92px;
-  font-weight: 400;
   font-size: 18px;
 }
 
@@ -294,18 +285,25 @@
   max-width: 242px;
 }
 
-.footer-menu {
+.footer__menu {
   align-self: start;
   justify-self: center;
   text-align: center;
-  text-underline-offset: 4px;
 }
 
-.menu__list {
+.footer__menu-list {
   list-style: none;
 }
 
-.social__list {
+.footer__menu-item {
+  white-space: nowrap;
+}
+
+.footer__menu-link {
+  text-underline-offset: 4px;
+}
+
+.footer__social-list {
   display: flex;
   justify-self: end;
   align-self: start;
@@ -313,6 +311,6 @@
   gap: 48px;
 }
 
-.social__logo {
+.footer__social-logo {
   width: 48px;
 }
