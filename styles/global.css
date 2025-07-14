@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /*new style added*/
+}
+
 body {
   display: flex; /*new style added*/
   flex-direction: column; /*new style added*/
