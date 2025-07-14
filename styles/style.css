@@ -33,11 +33,8 @@
 }
 
 .menu-link-active {
-  text-decoration: none;
-}
-
-.menu-link-active {
   cursor: default;
+  text-decoration: none;
 }
 
 /* <<< --- HEADER STYLES --- >>> */
